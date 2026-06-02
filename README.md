@@ -1,11 +1,14 @@
 
-  # Design Screens for RPG
+  # Aplicação do protótipo
 
-  This is a code bundle for Design Screens for RPG. The original project is available at https://www.figma.com/design/hoYpQAznpVhN2bqrH1mzSm/Design-Screens-for-RPG.
+Este é um pacote de código para telas de design para RPG. O projeto original está disponível em https://www.figma.com/design/hoYpQAznpVhN2bqrH1mzSm/Design-Screens-for-RPG.
 
-  ## Running the code
+  ## Executando o código
 
-  Run `npm i` to install the dependencies.
+ Execute `npm i` para instalar as dependências.
 
-  Run `npm run dev` to start the development server.
-  
+ Execute `npm run dev` para iniciar o servidor de desenvolvimento.
+
+ ## Dev
+
+ Letícia Araújo
