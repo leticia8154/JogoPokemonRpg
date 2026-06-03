@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokémon Auto-Battler RPG - Logs & Rankings</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0..1,0" />
+</head>
+<body class="overflow-x-hidden">
+
+  <div class="min-h-screen flex flex-col bg-[#0c192c] text-white">
+    
+    <div class="h-14 bg-[#0a1424] border-b-2 border-white/20 flex items-center px-6 justify-between shrink-0">
+      <span class="font-['JetBrains_Mono'] font-bold text-sm tracking-wider text-[#f1c40f]">⚡ POKÉMON COMMAND SYSTEM</span>
+      <span class="text-xs text-white/40">SECURE SESSION // OPERATOR: RED</span>
+    </div>
+
+    <div class="flex flex-1">
+      
+      <div class="w-56 bg-[#0a1424] border-r-2 border-white/10 p-4 flex flex-col gap-2 shrink-0">
+        <div class="bg-[#1e3a5f]/40 p-3 border border-white/20 text-xs font-['JetBrains_Mono'] text-center text-[#f1c40f] mb-4">
+          RANKING GLOBAL: #4
+        </div>
+        <div class="px-3 py-2 text-xs text-white/40 hover:text-white/80 transition-colors cursor-pointer" onclick="window.location.href='BattlePage.html'">⚔️ SIMULADOR</div>
+        <div class="px-3 py-2 text-xs text-white/40 hover:text-white/80 transition-colors cursor-not-allowed">👥 SQUAD CONTROL</div>
+        <div class="px-3 py-2 text-xs text-white/80 font-bold bg-[#1e3a5f] border-l-4 border-[#f1c40f]">📋 LOGS DE COMBATE</div>
+      </div>
+
+      <main class="flex-1 p-4 md:p-8 overflow-y-auto">
+        
+        <div class="flex justify-between items-end mb-4 border-b-2 border-white pb-4">
+          <div>
+            <h2 class="font-['Courier_Prime'] text-3xl text-[#f1c40f] uppercase tracking-[0.1em] font-bold">
+              COMBAT LOG &amp; RANKING
+            </h2>
+            <p class="font-['JetBrains_Mono'] text-xs text-[#bfecff] mt-2 uppercase">
+              Global Server Data Access
+            </p>
+          </div>
+          <button
+            onclick="window.location.href='LobbyPage.html'"
+            class="border-2 border-[#f1c40f] text-[#f1c40f] px-6 py-2 font-['JetBrains_Mono'] text-xs hover:bg-[#f1c40f] hover:text-black transition-colors uppercase tracking-widest flex items-center gap-2"
+          >
+            <span class="material-symbols-outlined text-sm">arrow_back</span>
+            Voltar ao Lobby
+          </button>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+          
+          <div class="col-span-1 md:col-span-6 flex flex-col gap-2">
+            <h3 class="font-['Courier_Prime'] text-lg text-white uppercase bg-[#0f2744] p-2 border-2 border-white inline-block w-max mb-2 font-bold">
+              Battle History
+            </h3>
+            <div class="border-2 border-white bg-[#0c192c] overflow-x-auto">
+              <table class="w-full text-left border-collapse min-w-max">
+                <thead>
+                  <tr class="border-b-2 border-white bg-[#1e3a5f] font-['JetBrains_Mono'] text-xs text-[#bfecff] uppercase">
+                    <th class="p-3 border-r border-white">Data</th>
+                    <th class="p-3 border-r border-white">Sua Equipe</th>
+                    <th class="p-3 border-r border-white">Oponente</th>
+                    <th class="p-3">Resultado</th>
+                  </tr>
+                </thead>
+                <tbody class="font-['JetBrains_Mono'] text-xs">
+                  
+                  <tr class="border-b border-white hover:bg-[#1e3a5f] transition-colors">
+                    <td class="p-3 border-r border-white text-white">2023-10-27 14:32</td>
+                    <td class="p-3 border-r border-white text-white">PIKACHU, CHARIZARD, SNORLAX</td>
+                    <td class="p-3 border-r border-white text-[#ffb4a9]">BLUE</td>
+                    <td class="p-3">
+                      <span class="text-[#bfecff] font-bold uppercase flex items-center gap-2">
+                        <span class="material-symbols-outlined text-sm">emoji_events</span>
+                        Victory
+                      </span>
+                    </td>
+                  </tr>
+
+                  <tr class="border-b border-white hover:bg-[#1e3a5f] transition-colors">
+                    <td class="p-3 border-r border-white text-white">2023-10-26 09:15</td>
+                    <td class="p-3 border-r border-white text-white">GENGAR, ALAKAZAM</td>
+                    <td class="p-3 border-r border-white text-[#ffb4a9]">AGATHA</td>
+                    <td class="p-3">
+                      <span class="text-[#ffb4ab] font-bold uppercase flex items-center gap-2">
+                        <span class="material-symbols-outlined text-sm">skull</span>
+                        Defeat
+                      </span>
+                    </td>
+                  </tr>
+
+                  <tr class="border-b border-white hover:bg-[#1e3a5f] transition-colors">
+                    <td class="p-3 border-r border-white text-white">2023-10-25 18:45</td>
+                    <td class="p-3 border-r border-white text-white">DRAGONITE, LAPRAS, SCYTHER</td>
+                    <td class="p-3 border-r border-white text-[#ffb4a9]">LANCE</td>
+                    <td class="p-3">
+                      <span class="text-[#ffb4ab] font-bold uppercase flex items-center gap-2">
+                        <span class="material-symbols-outlined text-sm">skull</span>
+                        Defeat
+                      </span>
+                    </td>
+                  </tr>
+
+                  <tr class="border-b border-white hover:bg-[#1e3a5f] transition-colors">
+                    <td class="p-3 border-r border-white text-white">2023-10-24 11:10</td>
+                    <td class="p-3 border-r border-white text-white">VENUSAUR, BLASTOISE</td>
+                    <td class="p-3 border-r border-white text-[#ffb4a9]">RIVAL ???</td>
+                    <td class="p-3">
+                      <span class="text-[#bfecff] font-bold uppercase flex items-center gap-2">
+                        <span class="material-symbols-outlined text-sm">emoji_events</span>
+                        Victory
+                      </span>
+                    </td>
+                  </tr>
+
+                  <tr class="border-b border-white hover:bg-[#1e3a5f] transition-colors">
+                    <td class="p-3 border-r border-white text-white">2023-10-23 22:00</td>
+                    <td class="p-3 border-r border-white text-white">ARCANINE, GYARADOS</td>
+                    <td class="p-3 border-r border-white text-[#ffb4a9]">LORELEI</td>
+                    <td class="p-3">
+                      <span class="text-[#bfecff] font-bold uppercase flex items-center gap-2">
+                        <span class="material-symbols-outlined text-sm">emoji_events</span>
+                        Victory
+                      </span>
+                    </td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="col-span-1 md:col-span-6 flex flex-col gap-2">
+            <h3 class="font-['Courier_Prime'] text-lg text-white uppercase bg-[#0f2744] p-2 border-2 border-white inline-block w-max mb-2 font-bold">
+              General Leaderboard
+            </h3>
+            <div class="border-2 border-white bg-[#0c192c] overflow-x-auto">
+              <table class="w-full text-left border-collapse min-w-max">
+                <thead>
+                  <tr class="border-b-2 border-white bg-[#1e3a5f] font-['JetBrains_Mono'] text-xs text-[#bfecff] uppercase">
+                    <th class="p-3 border-r border-white w-16 text-center">Pos</th>
+                    <th class="p-3 border-r border-white">Treinador</th>
+                    <th class="p-3 text-right">XP Acumulado</th>
+                  </tr>
+                </thead>
+                <tbody class="font-['JetBrains_Mono'] text-xs">
+                  
+                  <tr class="border-b border-white hover:bg-[#1e3a5f] transition-colors bg-[#0f2744]">
+                    <td class="p-3 border-r border-white text-center text-[#bfecff]">#1</td>
+                    <td class="p-3 border-r border-white flex items-center gap-2">
+                      <span class="material-symbols-outlined text-sm text-[#f1c40f]">star</span>
+                      LANCE
+                    </td>
+                    <td class="p-3 text-right text-[#bfecff]">999.999</td>
+                  </tr>
+
+                  <tr class="border-b border-white hover:bg-[#1e3a5f] transition-colors">
+                    <td class="p-3 border-r border-white text-center text-[#bfecff]">#2</td>
+                    <td class="p-3 border-r border-white">CYNTHIA</td>
+                    <td class="p-3 text-right text-[#bfecff]">845.230</td>
+                  </tr>
+
+                  <tr class="border-b border-white hover:bg-[#1e3a5f] transition-colors bg-[#0f2744]/50">
+                    <td class="p-3 border-r border-white text-center text-[#bfecff]">#3</td>
+                    <td class="p-3 border-r border-white">STEVEN</td>
+                    <td class="p-3 text-right text-[#bfecff]">792.100</td>
+                  </tr>
+
+                  <tr class="border-b border-white hover:bg-[#1e3a5f] transition-colors text-[#f1c40f] font-bold">
+                    <td class="p-3 border-r border-white text-center">#4</td>
+                    <td class="p-3 border-r border-white flex items-center gap-2">
+                      RED <span class="text-[#f1c40f] text-[10px] ml-2">(YOU)</span>
+                    </td>
+                    <td class="p-3 text-right">750.000</td>
+                  </tr>
+
+                  <tr class="border-b border-white hover:bg-[#1e3a5f] transition-colors bg-[#0f2744]/50">
+                    <td class="p-3 border-r border-white text-center text-[#bfecff]">#5</td>
+                    <td class="p-3 border-r border-white">BLUE</td>
+                    <td class="p-3 text-right text-[#bfecff]">748.500</td>
+                  </tr>
+
+                  <tr class="border-b border-white hover:bg-[#1e3a5f] transition-colors">
+                    <td class="p-3 border-r border-white text-center text-[#bfecff]">#6</td>
+                    <td class="p-3 border-r border-white">LEON</td>
+                    <td class="p-3 text-right text-[#bfecff]">710.000</td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </main>
+    </div>
+
+    <div class="h-8 bg-[#0a1424] border-t border-white/10 flex items-center px-6 justify-between text-[10px] text-white/40 shrink-0">
+      <span>SYSTEM STATUS: ENCRYPTED // LINK STABLE</span>
+      <span>VITE MULTI-STREAM SIMULATOR V2.6</span>
+    </div>
+
+  </div>
+
+</body>
+</html>
