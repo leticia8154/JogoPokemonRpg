@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router";
+import { HashRouter, Routes, Route } from "react-router-dom"; // Alterado para HashRouter de react-router-dom
 import LoginPage from "./pages/LoginPage";
 import LobbyPage from "./pages/LobbyPage";
 import HistoryPage from "./pages/HistoryPage";
@@ -7,7 +7,7 @@ import PlaceholderPage from "./pages/PlaceholderPage";
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter> {/* Trocado de BrowserRouter para HashRouter */}
       <div className="dark size-full min-h-screen bg-[#0c192c] text-white">
         <Routes>
           <Route path="/" element={<LoginPage />} />
@@ -20,6 +20,6 @@ export default function App() {
           <Route path="/quests" element={<PlaceholderPage title="MISSÕES" />} />
         </Routes>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
