@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route } from "react-router-dom"; // Alterado para HashRouter de react-router-dom
+import { HashRouter, Routes, Route } from "react-router"; // Alterado para HashRouter de react-router-dom
 import LoginPage from "./pages/LoginPage";
 import LobbyPage from "./pages/LobbyPage";
 import HistoryPage from "./pages/HistoryPage";
