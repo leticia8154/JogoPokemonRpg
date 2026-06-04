@@ -28,10 +28,10 @@
         </h2>
       </header>
 
-      <form onsubmit="event.preventDefault(); window.location.href='LobbyPage.html';" class="p-8 flex flex-col gap-4">
+      <form onsubmit="event.preventDefault(); window.location.hash = '/lobby';" class="p-8 flex flex-col gap-4">
         
         <div class="flex flex-col gap-2">
-          <label htmlFor="username" class="font-['JetBrains_Mono'] text-xs font-medium text-[#f1c40f] uppercase">
+          <label for="username" class="font-['JetBrains_Mono'] text-xs font-medium text-[#f1c40f] uppercase">
             Nome do Treinador
           </label>
           <div class="relative w-full">
@@ -50,7 +50,7 @@
         </div>
 
         <div class="flex flex-col gap-2">
-          <label htmlFor="password" class="font-['JetBrains_Mono'] text-xs font-medium text-[#f1c40f] uppercase">
+          <label for="password" class="font-['JetBrains_Mono'] text-xs font-medium text-[#f1c40f] uppercase">
             Senha
           </label>
           <div class="relative w-full">
@@ -99,4 +99,3 @@
 
 </body>
 </html>
-  
